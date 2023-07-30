@@ -1,0 +1,36 @@
+.Speech-main{
+    background-image: url(../../../public/img/body/testimonials-bg1.jpg);
+    background-attachment: fixed;
+width: 100%;
+}
+
+.Speech-slide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    color: var(--white);
+}
+.Speech-slide img{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 40px;
+}
+.Speech-slide h2{
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.Speech-slide h3{
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+.Speech-slide p{
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+.swiper-pagination-bullet{
+    background-color: #fff;
+}

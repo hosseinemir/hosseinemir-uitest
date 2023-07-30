@@ -1,0 +1,18 @@
+.LogoSlider {
+  margin-top: 150px;
+}
+.swiper-logo {
+  width: 140px;
+  margin-bottom: 60px;
+  cursor: pointer;
+  filter: grayscale(100);
+  transition: 0.2s ease;
+}
+.swiper-logo:hover {
+  filter: grayscale(0);
+}
+.swiper-slide{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

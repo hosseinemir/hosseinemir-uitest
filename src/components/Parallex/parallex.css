@@ -1,0 +1,117 @@
+.parralax-maindiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-image: url(../../../public/img/body/hero-bg2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  justify-content: flex-start;
+  color: var(--white);
+  width: 100%;
+  min-height: 1100px;
+}
+.parralax-maindiv h1 {
+  font-size: 30px;
+  font-weight: 650;
+  margin-bottom: 25px;
+  margin-top: 130px;
+}
+
+.parralax-maindiv h3 {
+  color: var(--gold);
+  font-size: 43px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+.parralax-maindiv> p {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* start parallexbox css */
+
+.containerparallaxbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 8px;
+  border: 1px solid var(--border-50);
+  padding: 20px;
+  width: 65%;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.icon-parralexbox {
+  color: var(--gold);
+  padding-bottom: 20px;
+}
+.parallax-box-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.containerparallaxbox p {
+font-size: 18px;
+font-weight: 500;
+}
+.containerparallaxbox p:hover {
+  color: var(--gold);
+  }
+  .containerparallaxbox:hover {
+    border: 1px solid var(--gold);
+  }
+
+/* end of parallexbox css */
+
+
+
+/* media */
+@media only screen and (min-width: 768px) {
+  .containerparallaxbox {
+    width: 25%;
+    padding: 40px 10px;
+
+  }
+  .parallax-box-container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .parralax-maindiv{
+    min-height: 1000px;
+  }
+  .parralax-maindiv h1{
+    margin-bottom: 30px;
+    margin-top: 200px;
+    font-size: 46px;
+}
+.parralax-maindiv> p{
+margin-bottom: 120px;
+}
+}
+@media only screen and (min-width: 1279px) {
+    .containerparallaxbox {
+      width: 10%;
+      padding: 40px 10px;
+      margin: 20px;
+    }
+    .parallax-box-container{
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+    .parralax-maindiv h3{
+        margin-bottom: 30px;
+    }
+    .parralax-maindiv h1{
+        margin-bottom: 30px;
+        margin-top: 200px;
+        font-size: 46px;
+    }
+  }

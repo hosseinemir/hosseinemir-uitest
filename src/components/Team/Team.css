@@ -1,0 +1,123 @@
+.Team-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 100px 0;
+}
+.Team-con {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+}
+.Team-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Team-title h2 {
+  color: var(--black-50);
+  font-size: 16px;
+  margin: 20px 0;
+}
+.Team-title span {
+  width: 70px;
+  margin-right: 10px;
+  background-color: var(--gold);
+  height: 2px;
+}
+.Team-con h3 {
+  font-weight: 800;
+  font-size: 24px;
+  margin: 20px 0;
+}
+.Team-box-con{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.Team-box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-shadow: 0 0 20px -15px rgb(0, 0, 0,0.7);
+    padding: 0 0 25px 0;
+    border-radius: 10px;
+    position: relative;
+    margin: 20px 0;
+}
+.Team-box img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.Team-box h4{
+    font-weight: 700;
+    margin: 25px 0;
+    font-size: 20px;
+    margin-right: 15px;
+}
+.Team-box p{
+font-weight: 700;
+margin-right: 15px;
+}
+.Team-box-icons{
+    position: absolute;
+    display: flex;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);  
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.1s ease-in;
+
+}
+.Team-box-icons div{
+    background-color:var(--white-50);
+    padding: 6px;
+    margin: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.Team-box:hover .Team-box-icons{
+opacity: 1;
+visibility: visible;
+top: 75%;
+}
+/* media */
+@media only screen and (min-width: 768px) {
+  .Team-con {
+    width: 80%;
+  }
+  .Team-box-con{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .Team-box{
+    width: 40%;
+  }
+  .Team-box-icons{
+    top: 70%;
+  }
+  .Team-box:hover .Team-box-icons{
+    
+    top: 60%;
+    }
+}
+
+@media only screen and (min-width: 1279px) {
+    .Team-box{
+        width: 22%;
+    }
+    .Team-box-icons{
+        top: 70%;
+      }
+      .Team-box:hover .Team-box-icons{
+        
+        top: 60%;
+        }
+}

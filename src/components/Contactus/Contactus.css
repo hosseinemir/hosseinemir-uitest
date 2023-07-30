@@ -1,0 +1,137 @@
+.Contactus-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.Contactus-con{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: flex-start;
+}
+
+.Contactus-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Contactus-title h2{
+    color: var(--black-50);
+    font-size: 16px;
+    margin: 20px 0;
+  }
+  .Contactus-title span{
+    width: 70px;
+    margin-right: 10px;
+    background-color:var(--gold);
+    height: 2px;
+  }
+  .Contactus-con h3{
+    font-weight: 800;
+    font-size: 24px;
+    margin: 20px 0;
+  }
+  .Contactus-map{
+    width: 100%;
+  }
+  .map{
+    width: 100%;
+    height: 250px;
+  }
+.Contactus-form-con{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+margin: 80px 0;
+}
+.Contactus-data{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 50px;
+}
+.Contactus-data-box{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.Contactus-icon{
+    background-color: var(--gold);
+    padding: 15px;
+    margin-left: 25px;
+    border-radius: 4px;
+
+}
+.Contactus-text h4{
+font-size: 20px;
+font-weight: 600;
+}
+.Contactus-text h3{
+    font-size: 17px;
+    font-weight: normal;
+}
+  .Contactus-input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .Contactus-input input{
+    width: 100%;
+    padding: 10px 5px;
+    border: 1px solid var(--border-50);
+    margin: 20px 0;
+    border-radius: 4px;
+  }
+  textarea{
+    width: 100%;
+    height: 160px;
+    border: 1px solid var(--border-50);
+    margin: 20px 0;
+    border-radius: 4px;
+
+  }
+  .Contactus-btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Contactus-btn button{
+    padding: 15px 30px;
+    margin: 20px;
+    border:none;
+    background-color: var(--gold);
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+
+  }
+  .Contactus-btn button:hover{
+    filter: contrast(0.9);
+  }
+/* media */
+@media only screen and (min-width: 768px) {
+  .Contactus-con {
+    width: 80%;
+    
+
+  }
+  .Contactus-input{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .Contactus-input-name , .Contactus-input-email{
+    width: 45% !important;
+  }
+  
+}
+@media only screen and (min-width: 1279px) {
+    .Contactus-form-con{
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,283 @@
+.header-con {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+ transition: 0.5s ease;
+  height: 80px;
+  z-index: 99;
+}
+.header-con-back{
+  background-color: var(--black-50);
+}
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.header-logo img {
+  width: 60px;
+  height: 60px;
+  margin: 2px 10px;
+}
+.header-logo p {
+  font-weight: 800;
+  font-size: 30px;
+  color: var(--white);
+  
+}
+.header-nav {
+  display: none;
+}
+
+.nav-span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 10px;
+  position: relative;
+  cursor: pointer;
+}
+.nav-span span {
+  width: 30px;
+  height: 5px;
+  background-color: var(--white);
+  margin: 2px 2px;
+  border-radius: 1px;
+}
+
+.but-nav {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.but-nav button {
+  width: 80px;
+  height: 40px;
+  border: 2px solid var(--gold);
+  border-radius: 5px;
+  background-color: unset;
+  color: var(--white);
+  margin: 0 15px;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+.but-nav button:hover{
+  background-color: var(--gold);
+  
+
+}
+.hum-ul {
+  position: absolute;
+  background-color: var(--white-50);
+  left: 20px;
+  transition: 0.3 ease-in-out;
+  top: 80px;
+  width: 85vw;
+  padding: 10px 3px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 20px -15px rgb(0, 0, 0, 0.8);
+}
+.hum-ul li {
+  padding: 10px 20px;
+  font-weight: 650;
+  font-size: 18px;
+  width: 90%;
+  border-radius: 3px;
+  margin: 0 1px;
+}
+.hum-ul li:hover {
+  color: var(--white);
+  background-color: var(--gold);
+}
+.active-li {
+  color: var(--white) !important;
+  background-color: var(--gold);
+}
+.hum-ul2 {
+  background-color: var(--white-50);
+  width: 75vw;
+  padding: 10px 3px;
+  margin: 10px 0;
+  border-radius: 10px;
+  transition: 0.3 ease-in-out;
+
+  box-shadow: 0 0 20px -15px rgb(0, 0, 0, 0.8);
+}
+.hum-ul2 li {
+  padding: 10px 20px;
+  font-weight: 650;
+  font-size: 18px;
+  width: 90%;
+  border-radius: 3px;
+  margin: 0 1px;
+  color: #000;
+}
+.hum-ul2 li:hover {
+  color: var(--white);
+  background-color: var(--gold);
+}
+.d-n {
+  display: none;
+}
+.hum-ul3 {
+  background-color: var(--white-50);
+  width: 70vw;
+  padding: 10px 3px;
+  margin: 10px 0;
+  border-radius: 10px;
+
+  transition: 0.3 ease-in-out;
+  box-shadow: 0 0 20px -15px rgb(0, 0, 0, 0.8);
+}
+.hum-ul3 li {
+  padding: 10px 20px;
+  font-weight: 650;
+  font-size: 18px;
+  width: 90%;
+  border-radius: 3px;
+  margin: 0 1px;
+  color: #000;
+}
+.sub-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* start main nav for descktop viwe */
+
+.main-ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.main-ul > li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 13px;
+  margin: 0 1px;
+  border-radius: 5px;
+  font-weight: 750;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  color: var(--white);
+}
+
+.main-ul > li:hover {
+  color: var(--gold) !important;
+ 
+}
+.sub1-parent {
+  position: relative;
+}
+.sub1-con {
+  position: absolute;
+  top: 130px;
+  right: 70px;
+  background-color: var(--white-50);
+  box-shadow: 0 0 20px -15px rgb(0, 0, 0, 0.8);
+  padding: 15px 20px;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: 0.2s ease-in;
+  width: 170px;
+  opacity: 0;
+  border-radius: 10px;
+}
+.sub1-con > li {
+  padding: 7px 5px;
+  margin: 1px 0;
+  color: var(--black);
+  display: flex;
+  width: 100%;
+  border-radius: 3px;
+  transition: 0.2s ease;
+}
+.sub1-con > li:hover {
+  color: var(--white) !important;
+  background-color: var(--gold);
+}
+
+.subselector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sub1-parent:hover .sub1-con {
+  visibility: visible;
+  top: 45px;
+  opacity: 1;
+}
+.sub2-parent > div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.sub2-con {
+  position: absolute;
+  right: 205px;
+  top: 110px;
+  background-color: var(--white-50);
+  box-shadow: 0 0 20px -15px rgb(0, 0, 0, 0.8);
+  padding: 15px 20px;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s ease;
+  width: 170px;
+  opacity: 0;
+  border-radius: 10px;
+
+}
+.sub2-con > li {
+  padding: 7px 5px;
+  margin: 1px 0;
+  color: var(--black);
+  display: flex;
+  width: 100%;
+  border-radius: 3px;
+  transition: 0.2s ease;
+}
+.sub2-con > li:hover {
+  color: var(--white) !important;
+  background-color: var(--gold);
+}
+.sub2-parent:hover .sub2-con {
+  visibility: visible;
+  top: 45px;
+  opacity: 1;
+  right: 205px;
+  top: 100;
+}
+.active-li-desktop{
+  color: var(--gold);
+}
+/* end main nav for descktop viwe */
+
+@media only screen and (min-width: 1279px) {
+  .header-nav {
+    display: flex;
+  }
+  .hum-nav-con {
+    display: none;
+  }
+  .header-con {
+    height: 100px;
+  }
+  .but-nav button {
+    margin: 0 65px;
+  }
+  .header-logo {
+    margin: 0 65px;
+  }
+}
