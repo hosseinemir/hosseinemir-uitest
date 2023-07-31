@@ -4,7 +4,7 @@ export default function ArticlepartTop() {
   return (
     <div className="ArticlepartTop-main">
 <div className="ArticlepartTop-con">
-      <img src="./img/Articlepart/13.jpg" alt="" />
+      <img src="/img/Articlepart/13.jpg" alt="" />
 
       <div className="ArticlepartTop-div">
         <h2>شرکت دیجیتال تامینو</h2>

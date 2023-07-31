@@ -19,7 +19,7 @@ export default function Article2() {
     return (
     <div className='article2-main'>
         <div className='article2-con'>
-            <img src="./img/articlepart/features.jpg" alt="" />
+            <img src="/img/articlepart/features.jpg" alt="" />
             <div className='Article2-box-con'>
 {props.map(item=>(
     <Article2box className='icon-art2' key={item.id} text={item.text} title={item.title}>

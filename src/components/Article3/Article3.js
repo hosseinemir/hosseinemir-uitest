@@ -36,7 +36,7 @@ export default function Article3() {
   return (
     <div className="Article3-main">
       <div className="Article3-con">
-        <img src="./img/articlepart/counts-img.jpg" alt="" />
+        <img src="/img/articlepart/counts-img.jpg" alt="" />
         <div className="Article3-content">
           <h4>شایسته ترین لذت را به هر حال ارائه می دهد</h4>
           <p>
