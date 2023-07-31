@@ -28,4 +28,5 @@ body{
 
 body,html,*{
     font-family: iransans;
+    box-sizing: border-box;
 }
